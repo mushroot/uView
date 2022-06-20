@@ -204,7 +204,7 @@
 			setTimeout(() => {
 				// 这里是组件内获取布局状态，不能用uni.createIntersectionObserver，而必须用this.createIntersectionObserver
 				this.disconnectObserver('contentObserver');
-				const contentObserver = uni.createIntersectionObserver(this);
+				const contentObserver = this.createIntersectionObserver();
 				// 要理解这里怎么计算的，请看这个：
 				// https://blog.csdn.net/qq_25324335/article/details/83687695
 				contentObserver.relativeToViewport({

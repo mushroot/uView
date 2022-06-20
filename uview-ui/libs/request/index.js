@@ -19,6 +19,10 @@ class Request {
 			}
 			this.options = interceptorRequest;
 		}
+
+		// 移除属性缓存，防止登出失效
+		delete this.config.header.Authorization;
+
 		options.dataType = options.dataType || this.config.dataType;
 		options.responseType = options.responseType || this.config.responseType;
 		options.url = options.url || '';

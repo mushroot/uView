@@ -121,6 +121,13 @@ export default {
 				return {};
 			}
 		},
+		// rs: 自定义内容背景样式
+		customCenterStyle: {
+			type: Object,
+			default() {
+				return {};
+			}
+		},
 		value: {
 			type: Boolean,
 			default: false
@@ -258,7 +265,7 @@ export default {
 				// 不加可能圆角无效
 				style.overflow = 'hidden';
 			}
-			return style;
+			return Object.assign(style, this.customCenterStyle);
 		},
 		// 计算整理后的z-index值
 		uZindex() {
@@ -452,5 +459,12 @@ export default {
 .u-close--bottom-right {
 	right: 30rpx;
 	bottom: 30rpx;
+}
+.u-close--bottom-center-outside {
+	bottom: -94rpx;
+	left: 46%;
+	border: 2rpx solid #999;
+	border-radius: 50%;
+	padding: 10rpx;
 }
 </style>

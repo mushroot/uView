@@ -307,10 +307,10 @@
 <style lang="scss" scoped>
 	@import "../../libs/css/style.components.scss";
 
-	view,
-	scroll-view {
-		box-sizing: border-box;
-	}
+	// view,
+	// scroll-view {
+	// 	box-sizing: border-box;
+	// }
 
 	/* #ifndef APP-NVUE */
 	::-webkit-scrollbar,

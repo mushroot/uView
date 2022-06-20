@@ -514,7 +514,7 @@ export default {
 	/* #ifndef APP-NVUE */
 	display: inline-flex;		
 	/* #endif */
-	width: auto;
+	// width: auto;
 	font-size: 26rpx;
 	height: 70rpx;
 	line-height: 70rpx;
@@ -525,7 +525,7 @@ export default {
 	/* #ifndef APP-NVUE */
 	display: inline-flex;		
 	/* #endif */
-	width: auto;
+	// width: auto;
 	font-size: 22rpx;
 	padding-top: 1px;
 	height: 50rpx;
